@@ -7,24 +7,75 @@
     -moz-border-radius: 500px;
     position: center;
 }
+
+
 .Student{
     background-color: white;
     display: inline-block;
     padding-left: 10%;
     border-bottom: 1px solid grey;
     width: 100%;
+
 }
 
+.active{
+    font-size: 30px;
+    border-style: hidden;
+    padding: 10px 10px;
+    float: right;
+    margin-right: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.active:after {
+
+    content: "\2212";
+}
+
+.collapse{
+    font-size: 30px;
+    border-style: hidden;
+    padding: 10px 10px;
+    float: right;
+    margin-right: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.collapse:after{
+    content: '\02795';
+}
+
+.scores{
+    align-content: center;
+    float: left;
+    width: 100%;
+}
+
+
+.tags{
+    margin-left: 15%;
+    border-style: hidden;
+    border-bottom: 1px black solid;
+    margin-bottom: 10%;
+    padding-bottom: 5px;
+    height: 30px;
+    font-size: 16px;
+}
 p{
     font-size: 12px;
     padding-left: 15%;
     color: grey;
+    font-family: sans-serif;
 }
 b{
     font-size: 40px;
 }
 .photo{
 float: left;
+
 }
 .information{
 float: left;

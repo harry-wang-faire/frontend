@@ -27,7 +27,7 @@ class  StudentPage extends React.Component{
             console.log(this.state.filterstudents);
             for (let j = 0; j < this.state.filterstudents.length; j++) {
                 console.log(this.state.filterstudents[j]);
-                rows.push(<Student key={this.state.students[j].firstName} value={this.state.filterstudents[j]}/>);
+                rows.push(<Student key={this.state.filterstudents[j].firstName} value={this.state.filterstudents[j]}/>);
             }
         }
         console.log(rows);
@@ -89,6 +89,11 @@ class  StudentPage extends React.Component{
         this.state.namevalue = event.target.value;
         this.filterByName();
     }
+    changeValuetags(event){
+        console.log(event);
+        this.state.namevalue = event.target.value;
+        this.filterByName();
+    }
 
     render(){
         //console.log(this.state);
@@ -102,7 +107,10 @@ class  StudentPage extends React.Component{
             return (
                 <div className='StudentPage'>
                     <div className='nameSearchBar'>
-                        <input id='nameBar' value={this.state.namevalue} placeholder="Search by Name" onChange={this.changeValue}/>
+                        <input id='nameBar' value={this.state.namevalue} placeholder="Search by name" onChange={this.changeValue}/>
+                    </div>
+                    <div className='tagSearchBar'>
+                        <input id='tagBar' value={this.state.namevalue} placeholder="Search by tags" onChange={this.changeValuetags}/>
                     </div>
 
                     <div className='studentList'>

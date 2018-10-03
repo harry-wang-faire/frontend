@@ -1,8 +1,8 @@
 .StudentPage{
     overflow-y:scroll;
-    height: 80%;
+    height: 85%;
     position:fixed;
-    top: 10%;
+    top: 7.5%;
     width: 60%;
     background-color: white;
     border-radius: 5px;
@@ -14,9 +14,26 @@
     width: 100%;
     height: 50px;
 }
+.tagSearchBar{
+    width: 100%;
+    height: 50px;
+}
 #nameBar{
     width: 100%;
     border-style: hidden;
+    border-bottom: 1px grey solid;
+    position: fixed;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#tagBar{
+    width: 100%;
+    border-style: hidden;
+    border-top: 1px grey solid;
     border-bottom: 1px grey solid;
     position: fixed;
     height: 30px;
