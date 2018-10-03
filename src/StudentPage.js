@@ -9,29 +9,18 @@ class  StudentPage extends React.Component{
             students: [],
             onloading: true,
             namevalue: '',
-            namefilter: false,
             filterstudents: [],
+            tagvalue: '',
         };
         this.filterByName = this.filterByName.bind(this);
         this.changeValue = this.changeValue.bind(this);
+        this.changeValuetags = this.changeValuetags.bind(this);
         this.renderStudents = this.renderStudents.bind(this);
+        this.addTags = this.addTags.bind(this);
     }
 
     renderStudents(){
-        let rows = [];
-        if (!this.state.namefilter) {
-            for (let i = 0; i < this.state.students.length; i++) {
-                rows.push(<Student key={this.state.students[i].firstName} value={this.state.students[i]}/>);
-            }
-        }else{
-            console.log(this.state.filterstudents);
-            for (let j = 0; j < this.state.filterstudents.length; j++) {
-                console.log(this.state.filterstudents[j]);
-                rows.push(<Student key={this.state.filterstudents[j].firstName} value={this.state.filterstudents[j]}/>);
-            }
-        }
-        console.log(rows);
-        return rows;
+        return this.filterByName().map((student) => <Student key={student.firstName} addTags={this.addTags} value={student}/>)
     }
 
     fetchData(){
@@ -51,48 +40,63 @@ class  StudentPage extends React.Component{
 
     componentDidMount(){
         this.fetchData();
+
     }
 
-    filterByName(){
+
+    filterByName() {
         console.log(this.state.namevalue);
-         if (this.state.namevalue === ''){
-            this.setState({
-                namefilter: false,
-            });
+        if (this.state.namevalue === '' && this.state.tagvalue === ''){
+            return this.state.students;
+        } else if (this.state.tagvalue === ''){
+            let name = this.state.namevalue.toLowerCase();
+            var filteredStudents = [];
+            for (let i = 0; i < this.state.students.length; i++){
+                let firstName = this.state.students[i].firstName.toLowerCase().substring(0,name.length);
+                let lastName = this.state.students[i].lastName.toLowerCase().substring(0,name.length);
+                if (firstName.indexOf(name) !== -1 || lastName.indexOf(name) !== -1){
+                    filteredStudents.push(this.state.students[i]);
+                }
+            }
+            return filteredStudents;
         }else{
-             let name = this.state.namevalue.toLowerCase();
-             var filteredStudents = [];
-             for (let i = 0; i < this.state.students.length; i++){
-                 let firstName = this.state.students[i].firstName.toLowerCase().substring(0,name.length);
-                 let lastName = this.state.students[i].lastName.toLowerCase().substring(0,name.length);
-                 if (firstName.indexOf(name) !== -1 || lastName.indexOf(name) !== -1){
-                     console.log(name);
-                     console.log(firstName);
-                     console.log(lastName);
-                     filteredStudents.push(this.state.students[i]);
-                 }
-                 console.log(filteredStudents);
-                 if (filteredStudents.length >= 0){
-                     this.setState({
-                         namefilter: true,
-                         filterstudents: filteredStudents,
-                     });
-                 }
+            let arr = [];
+            for (let i = 0; i < this.state.students.length; i++){
 
-             }
-         }
+                console.log(this.state.students[i]);
+                if (this.state.students[i].tags === undefined) this.state.students[i].tags = [];
+                if (this.state.students[i].tags.includes(this.state.tagvalue)){
+                    arr.push(this.state.students[i]);
+                }
 
+            }
+            return arr;
+        }
+
+    }
+
+    addTags(student,n) {
+        var temp = this.state.students[this.state.students.indexOf(student)];
+        temp.tags = n.slice();
+        var arrcopy = this.state.students.slice();
+        arrcopy[this.state.students.indexOf(student)] = temp;
+
+        this.setState({
+            students: arrcopy,
+        });
     }
 
     changeValue(event){
         console.log(event);
-        this.state.namevalue = event.target.value;
-        this.filterByName();
+        this.setState({
+            namevalue: event.target.value,
+        });
     }
     changeValuetags(event){
         console.log(event);
-        this.state.namevalue = event.target.value;
-        this.filterByName();
+        this.setState({
+            tagvalue: event.target.value,
+        });
     }
 
     render(){
@@ -110,7 +114,7 @@ class  StudentPage extends React.Component{
                         <input id='nameBar' value={this.state.namevalue} placeholder="Search by name" onChange={this.changeValue}/>
                     </div>
                     <div className='tagSearchBar'>
-                        <input id='tagBar' value={this.state.namevalue} placeholder="Search by tags" onChange={this.changeValuetags}/>
+                        <input id='tagBar' value={this.state.tagvalue} placeholder="Search by tags" onChange={this.changeValuetags}/>
                     </div>
 
                     <div className='studentList'>

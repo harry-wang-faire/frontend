@@ -54,8 +54,23 @@
     width: 100%;
 }
 
+.tag{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
 
+}
 .tags{
+    margin-left: 15%;
+    width: auto;
+}
+.taglabel{
     margin-left: 15%;
     border-style: hidden;
     border-bottom: 1px black solid;
