@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e3e905e-7b64-4ba5-8384-df8ec40d4800" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,17 +48,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1239" />
+          <entry key="css" value="1241" />
           <entry key="html" value="21" />
-          <entry key="js" value="6005" />
+          <entry key="js" value="6011" />
           <entry key="md" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1239" />
+          <entry key="CSS" value="1241" />
           <entry key="HTML" value="21" />
-          <entry key="JavaScript" value="6005" />
+          <entry key="JavaScript" value="6011" />
           <entry key="PLAIN_TEXT" value="106" />
         </counts>
       </usages-collector>
@@ -103,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Student.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-164">
-              <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="401">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -115,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Student.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
+            <state relative-caret-position="250">
+              <caret line="77" column="15" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="15" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -124,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StudentPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+            <state relative-caret-position="536">
+              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -158,6 +152,7 @@
       <find>lab</find>
       <find>inclu</find>
       <find>console</find>
+      <find>%</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,9 +167,9 @@
         <option value="$PROJECT_DIR$/src/StudentPage.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/Student.css" />
         <option value="$PROJECT_DIR$/src/Student.js" />
         <option value="$PROJECT_DIR$/src/StudentPage.js" />
+        <option value="$PROJECT_DIR$/src/Student.css" />
       </list>
     </option>
   </component>
@@ -311,12 +306,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538533500705</updated>
-      <workItem from="1538533502126" duration="33604000" />
+      <workItem from="1538533502126" duration="33862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33604000" />
+    <option name="totallyTimeSpent" value="33862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -428,13 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -452,23 +440,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Student.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
+        <state relative-caret-position="250">
+          <caret line="77" column="15" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="15" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentPage.js">
+    <entry file="file://$PROJECT_DIR$/src/Student.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="401">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
