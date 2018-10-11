@@ -10,7 +10,7 @@ then npm start
 Please only input tags or student name, otherwise it will only search by one
 
 
-Notice that this app is developed under MacOS 13-inch version, the UI looks the same as the construction.
+Notice that this app is developed under MacOS 13-inch version, the UI looks the same as the instruction.
 
 
 Thank you for taking time look at it
